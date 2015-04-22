@@ -124,9 +124,9 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (~> 1.1)
-    sdoc (0.4.1)
-      json (~> 1.7, >= 1.7.7)
-      rdoc (~> 4.0)
+    sdoc (0.4.0)
+      json (~> 1.8)
+      rdoc (~> 4.0, < 5.0)
     spring (1.3.4)
     sprockets (3.0.1)
       rack (~> 1.0)
@@ -142,31 +142,31 @@ GEM
       coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uglifier (2.7.1)
+    uglifier (1.3.0)
       execjs (>= 0.3.0)
-      json (>= 1.8.0)
-    web-console (2.1.2)
-      activemodel (>= 4.0)
+      multi_json (~> 1.0, >= 1.0.2)
+    web-console (2.0.0)
+      activemodel (~> 4.0)
       binding_of_caller (>= 0.7.2)
-      railties (>= 4.0)
+      railties (~> 4.0)
       sprockets-rails (>= 2.0, < 4.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  byebug
-  coffee-rails (~> 4.1.0)
-  jbuilder (~> 2.0)
-  jquery-rails
+  byebug (= 4.0.5)
+  coffee-rails (= 4.1.0)
+  jbuilder (= 2.2.13)
+  jquery-rails (= 4.0.3)
   minitest-reporters (= 1.0.5)
   pg (= 0.17.1)
   rails (= 4.2.1)
   rails_12factor (= 0.0.2)
-  sass-rails (~> 5.0)
-  sdoc (~> 0.4.0)
-  spring
-  sqlite3
-  turbolinks
-  uglifier (>= 1.3.0)
-  web-console (~> 2.0)
+  sass-rails (= 5.0.3)
+  sdoc (= 0.4.0)
+  spring (= 1.3.4)
+  sqlite3 (= 1.3.10)
+  turbolinks (= 2.5.3)
+  uglifier (= 1.3.0)
+  web-console (= 2.0)
