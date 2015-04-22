@@ -1,28 +1,20 @@
-== README
+= PORTFOLIO A
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+== Dependencies:
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* <tt>Ruby version 2.1.2</tt>
+* <tt>Rails 4.2.1</tt>
+* <tt>RBENV used</tt> (http://stackoverflow.com/questions/8877772/how-do-you-use-multiple-rails-versions-with-rbenv?answertab=active#tab-top)
+* <tt>Database: SQLite3 in development & testing</tt>
+            <tt>PostgreSQL in production through heroku</tt>
+* <tt>Testing: MiniTest</tt>
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+----
+
+
+== Pages:
+ * Home
+ * Resume
+ * Portfolio
+ * About
