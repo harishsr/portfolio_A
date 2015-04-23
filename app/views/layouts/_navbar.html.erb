@@ -14,6 +14,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+        <li class=<%= is_active?(root_path) %>><%= link_to "Blog", root_path %></li>
         <li class=<%= is_active?(portfolio_path) %>><%= link_to "Portfolio", portfolio_path %></li>
         <li class=<%= is_active?(resume_path) %>><%= link_to "Resume", resume_path %></li>
         <li class=<%= is_active?(about_path) %>><%= link_to "About", about_path %></li>
