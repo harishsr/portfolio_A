@@ -4,9 +4,10 @@
 
 * <tt>Ruby 2.1.2</tt>
 * <tt>Rails 4.2.1</tt>
-* <tt>RBENV</tt> (http://stackoverflow.com/questions/8877772/how-do-you-use-multiple-rails-versions-with-rbenv?answertab=active#tab-top)
+* <tt>RBENV</tt>[http://stackoverflow.com/questions/8877772/how-do-you-use-multiple-rails-versions-with-rbenv?answertab=active#tab-top]
 * Database: <tt>SQLite3 in development & testing; PostgreSQL in production through heroku</tt>
 * Testing: <tt>MiniTest</tt>
+* CSS plugin: <tt>Bootstrap</tt>
 
 
 ----
