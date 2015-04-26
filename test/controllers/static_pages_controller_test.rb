@@ -3,7 +3,7 @@ require 'test_helper'
 class StaticPagesControllerTest < ActionController::TestCase
 
   def setup
-    @a = " | Harish"
+    @a = " | Harish's Studio"
   end
 
 

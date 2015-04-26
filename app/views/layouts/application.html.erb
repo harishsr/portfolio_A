@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title><%= yield(:title) %> | Harish</title>
+  <title><%= yield(:title) %> | Harish's Studio</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -15,5 +15,9 @@
 <body>
   <%= yield %>
 </body>
+
+<footer>
+  <%= render 'layouts/footer' %>
+</footer>
 
 </html>
