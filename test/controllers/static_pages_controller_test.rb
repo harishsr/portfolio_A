@@ -27,6 +27,11 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+  test "should get contact" do
+    get :contact
+    assert_response :success
+  end
+
   test "should get matching titles" do 
     get :home
     assert_select "title", "Home" + @a
@@ -39,6 +44,9 @@ class StaticPagesControllerTest < ActionController::TestCase
 
     get :about
     assert_select "title", "About" + @a 
+
+    get :contact
+    assert_select "title", "Contact" + @a 
   end
 
 end
