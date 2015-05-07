@@ -2,10 +2,21 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+// VARIABLES & MIXINS
+
+  $padd-main: 20%;
+
 // MAIN
 
   body {
-    padding: 50px;
+    padding: 50px $padd-main;
+  }
+
+// NAVBAR
+
+  nav {
+    padding-right: $padd-main;
+    padding-left: $padd-main;
   }
 
 // PORTFOLIO
@@ -17,6 +28,17 @@
   img.pf-thumb {
     border: 2px solid black;
     width: 80%;
+  }
+
+// RESUME
+
+  .resume {
+    .page-header h1, .resume-title {
+      text-align: right;
+    }
+    .resume-title {
+      
+    }
   }
 
 // CONTACT
@@ -34,5 +56,5 @@
 // FOOTER
 
   .page-footer {
-    padding-top: 20px;
+    margin-top: 20px;
   }
