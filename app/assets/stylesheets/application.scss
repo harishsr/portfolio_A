@@ -13,6 +13,22 @@
     padding: 50px $padd-main;
   }
 
+// HOME
+
+  .home {
+    h1 {
+      text-align: center;
+    }
+    .jumbotron {
+      margin: 10px;
+      border-radius: 20px;
+      p {
+        padding: 15px;
+        text-align: center;
+      }
+    }
+  }
+
 // NAVBAR
 
   nav {
