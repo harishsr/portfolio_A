@@ -5,6 +5,7 @@
 // VARIABLES & MIXINS
 
   $padd-main: 20%;
+  $large-font-size: 4em;
 
 // MAIN
 
@@ -33,11 +34,25 @@
 // RESUME
 
   .resume {
-    .page-header h1, .resume-title {
+    .res-title h1, .r-title-info {
       text-align: right;
+      font-size: $large-font-size;
     }
-    .resume-title {
-      
+    .r-title-info, .res-cat h3 {
+      text-transform: uppercase;
+    }
+    .res-cat {
+      padding: 0;
+    }
+    ul li {
+      padding: 5px 0;
+      em {
+        font-weight: bold;
+        font-style: normal;
+      }
+    }
+    .res-hr {
+      border-top: 1px dashed $gray-lighter;
     }
   }
 
