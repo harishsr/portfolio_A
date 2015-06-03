@@ -11,16 +11,41 @@
         <%= link_to image_tag('ror_thumb.png', class: 'pf-thumb', alt: 'Ruby on Rails Twitter-clone', title: 'Ruby on Rails Twitter-clone'), "https://ancient-everglades-3119.herokuapp.com/" %>
         <h3>Twitter clone: Ruby on Rails Tutorial</h3>
         <p>
-          This app was created using the Ruby on Rails Tutorial by Michael Hartl (<a href="https://www.railstutorial.org/book/">source</a>)
+          <!-- Explanation of site -->
+          This app uses a custom authorization and authentication system to allow users to create accounts and log in.  It requires that they be authenticated before accessing certain pages such as the profile.  Once logged in, they can post short messages, with pictures if they prefer.  
         </p>
         <p>
-          This app uses a custom authorization and authentication system to allow users to create accounts and log in.  It requires that they be authenticated before accessing certain pages such as the profile.  Once logged in, they can post short messages of their choosing.  Users are also able to upload pictures in their posts.  This app was created using test-driven-development (TDD).
+          <!-- Notes to detail technologies used, etc. -->
+          Created using Ruby on Rails and online resources.  Registration, login, account activation, and password reset functionalities were written from scratch.  The <span class="code">carrierwave</span> and <span class="code">mini_magick</span> gems were used to upload images.  Mailers were used to send emails to users for account activations and for password resets.  Created using tests and test-driven development (TDD) and the default Rails testing stack.
+        </p>
+        <p>
+          <!-- Links -->
+          <a href="https://www.railstutorial.org/book/" title="Ruby on Rails Tutorial">Tutorial used</a> | <a href="https://github.com/harishsr/hartl3_sample_app" title="Github link to app">Github link</a>.
         </p>
       </div>
 
-    <!-- PROJECT 2: Craiglist clone -->
-      <div class="col-md-6">
-        <h3>Next project: in progress</h3>
+    <!-- PROJECT 2: HList - items for sale -->
+      <div class="col-md-6 pf-project">
+        <%= link_to image_tag('hlist_a6_thumb.png', class: 'pf-thumb', alt: 'List: Jacksonville\'s internet classifieds', title: 'List: Jacksonville\'s internet classifieds'), "https://murmuring-stream-8350.herokuapp.com/" %>
+        <h3>List: Jacksonville's internet classifieds</h3>
+        <p>
+          <!-- Explanation of site -->
+          This app allows everyone to view listings of items or services for sale.  These items and services are only posted onto the site by authenticated users.
+        </p>
+        <p>
+          <!-- Notes to detail technologies used, etc. -->
+          Created using Ruby on Rails.  HAML, ERB, SCSS, and Bootstrap were used for the presentation of this site.  The default Rails testing stack was used for testing.  User registration, login, and authentication was created using the <span class="code">devise</span> gem.  <span class="code">will_paginate</span> was used to paginate the numerous pages of postings.  The <span class="code">validates_email_format_of</span> gem was used to validate that the format of entered emails was correct.  Deployed using Heroku.
+        </p>
+        <p>
+          <!-- Links -->
+          <a href="https://github.com/harishsr/h_list" title="Github link to app">Github link</a>.
+        </p>
+      </div>
+
+    <!-- PROJECT 3: Blog with authorized users -->
+      <div class="col-md-6 pf-project">
+        <%= image_tag('coming_soon_thumb.png', class: 'pf-thumb', alt: 'Coming Soon', title: 'Coming Soon') %>
+        <h3>Blogging app: in progress</h3>
       </div>
 
   </div>
