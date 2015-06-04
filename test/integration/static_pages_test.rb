@@ -8,7 +8,7 @@ class StaticPagesTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]", root_path
     assert_select "a[href=?]", portfolio_path
     assert_select "a[href=?]", resume_path
-    assert_select "a[href=?]", about_path
+    # assert_select "a[href=?]", about_path
     assert_select "a[href=?]", contact_path
   end
 
