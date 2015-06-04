@@ -8,7 +8,12 @@
         <h1>Harish Ramachandran</h1>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-3 r-title-info">
+        <h4><%= link_to "Download PDF", '/resume_2015_06.pdf' %></h4>
+      </div>
+
+      <div class="col-md-3 r-title-info">
+        <h4><%= link_to "github profile", 'https://github.com/harishsr' %></h4>
       </div>
 
       <div class="col-md-3 r-title-info">
@@ -21,59 +26,68 @@
     </span><hr>
 
   <div class="row">
-    <!-- TECHNICAL SKILLS -->
-      <span class="row">
-        <div class="col-md-12 res-cat">
-          <h3>Technical Skills</h3>
-        </div>
-
-        <div class="col-md-6">
-          <ul>
-            <li><em>Proficiencies: </em>HTML5, CSS, SASS, Ruby, Ruby on Rails, TDD, RSpec, MiniTest, Git.</li>
-            <li><em>Github: </em><a href="https://github.com/harishsr">https://github.com/harishsr</a></li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <ul>
-            <li><em>Tools: </em>Sublime Text, Terminal, Github, Heroku, Microsoft Office, Windows, Mac OS</li>
-            <li>Average typing speed of 75 wpm.</li>
-          </ul>
-        </div>
-      </span><hr class="res-hr">
-
     <!-- TECHNICAL EXPERIENCE -->
       <span class="row">
         <div class="col-md-12 res-cat">
-          <h3>Technical Experience</h3>
+          <h3>Technical Skills & Projects</h3>
         </div>
+        <!-- SKILLS -->
+          <span class="row">
+            <div class="col-md-6">
+              <ul>
+                <li><em>Languages & Frameworks: </em>HTML, CSS, SASS, Ruby, Ruby on Rails, RSpec, MiniTest, HAML, Bootstrap, Git.</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul>
+                <li><em>Programs: </em>Sublime Text, Terminal, Github, Heroku, Microsoft Office (Sharepoint, Word, Excel, Outlook, Powerpoint), Mac OS, Windows.</li>
+              </ul>
+            </div>
+          </span>
 
-        <!-- THIS PORTFOLIO -->
-          <div class="col-md-9">
-            <h4>Portfolio Project</h4>
+        <!-- H_LIST -->
+        <span class="row">
+          <div class="col-md-12">
+            <h4>List: Jacksonville's Internet Classifieds</h4>
+            <h5><a href="https://github.com/harishsr/h_list">Github code</a>, <a href="https://murmuring-stream-8350.herokuapp.com/">Website link</a></h5>
           </div>
-          <div class="col-md-3">
-            <h4><a href="https://github.com/harishsr/portfolio_A">Github</a>, <a href="#">Website</a></h4>
-          </div>
+        </span>
 
           <div class="col-md-12">
             <ul>
-              <li><em>Languages & frameworks: </em>Ruby, Ruby on Rails, HTML, HAML, CSS, SASS, Javascript, Git.</li>
-              <li><em>Gems: </em>bootstrap-sass</li>
+              <li>Uses Ruby, Ruby on Rails, HTML, HAML, CSS, SASS, MiniTest, Bootstrap, Git, PostgreSQL, and Heroku.</li>
+              <li>This app allows all users to view listings of items or services for sale. These items and services are only posted onto the site by users that have registered and logged in.</li>
+              <li>The default Rails testing stack was used for testing. User registration, login, and authentication were created using the devise gem. will_paginate was used to paginate the numerous pages of postings. The validates_email_format_of gem was used to validate that the format of entered emails was correct. Deployed using Heroku.</li>
+            </ul>
+          </div>
+
+        <!-- THIS PORTFOLIO -->
+        <span class="row">
+          <div class="col-md-12">
+            <h4>Portfolio</h4>
+            <h5><a href="https://github.com/harishsr/portfolio_A">Github code</a>, <a href="http://www.harishsr.com">Website link</a></h5>
+          </div>
+        </span>
+
+          <div class="col-md-12">
+            <ul>
+              <li>Uses Ruby, Ruby on Rails, HTML, HAML, CSS, SASS, Javascript, Bootstrap, MiniTest, Git, PostgreSQL, and Heroku.</li>
+              <li>Employs static pages to display my portfolio, resume, and information about me.</li>
+              <li>HAML, ERB, SASS, and Bootstrap were used for presentation.  Tested using the default Rails testing stack.  Deployed using PostgreSQL in Heroku.</li>
             </ul>
           </div>
 
         <!-- MICHAEL HARTL'S TUTORIAL -->
-          <div class="col-md-9">
+          <div class="col-md-12">
             <h4>Twitter clone</h4>
-          </div>
-          <div class="col-md-3">
-            <h4><a href="https://github.com/harishsr/hartl3_sample_app">Github</a>, <a href="https://ancient-everglades-3119.herokuapp.com/">Website</a></h4>
+            <h5><a href="https://github.com/harishsr/hartl3_sample_app">Github code</a>, <a href="https://ancient-everglades-3119.herokuapp.com/">Website link</a></h5>
           </div>
 
           <div class="col-md-12">
             <ul>
-              <li><em>Languages & frameworks: </em>Ruby, Ruby on Rails, HTML, CSS, SASS, Javascript, Git, PostgreSQL, Heroku.</li>
-              <li><em>Gems: </em>bootstrap-sass, faker, carrierwave, mini_magick, will_paginate, byebug, puma.</li>
+              <li>Uses Ruby, Ruby on Rails, HTML, ERB, CSS, SASS, Javascript, Bootstrap, MiniTest, Git, PostgreSQL, and Heroku.</li>
+              <li>This app uses a custom authorization and authentication system to allow users to create accounts and log in. It requires that they be authenticated before accessing certain pages such as the profile. Once logged in, they can post short messages, with pictures if they prefer.</li>
+              <li>Created using Ruby on Rails and online resources. Registration, login, account activation, and password reset functionalities were written from scratch. The carrierwave and mini_magick gems were used to upload images. Mailers were used to send emails to users for account activations and for password resets. Created using tests and test-driven development (TDD) and the default Rails testing stack.  Deployed using Heroku.</li>
             </ul>
           </div>
       </span><hr class="res-hr">
@@ -95,8 +109,8 @@
           <div class="col-md-12">
             <ul>
               <li>Assist businesses working with State Farm to access their individual accounts so they can perform their Business-to-Business (B2B) operations. Provide support for the tools that users can access on the <abbr title="Business-to-Business">B2B</abbr> website.</li>
-              <li>Occasionally work as a Procedural Assistance Line (PAL) specialist that answers my colleagues’ procedural questions and assists supervisors with escalated customer calls.</li>
-              <li>Received numerous commendations for call quality and being able to meet or exceed my team’s goal metrics.</li>
+              <li>Work as a Procedural Assistance Line (PAL) specialist that answers procedural questions and received recognition from supervisors in de-escalating escalated customer calls.</li>
+              <li>Received numerous commendations for call quality, being able to meet or exceed my team’s goal metrics, and helping team members improve their call metrics and quality.</li>
               <li>Perform all duties of the Randstad Staffing Internet Support Representative, below.</li>
             </ul>
           </div>
@@ -136,7 +150,7 @@
               <li>Worked on a deadline with adjusters and case managers to sell the benefits of doing business with MSC versus our competitors.</li>
             </ul>
           </div>
-      </span>
+      </span><hr class="res-hr">
       
     <!-- EDUCATION -->
       <span class="row">
@@ -156,7 +170,7 @@
             <li>Bachelor of Business Administration in Economics; coursework included financial & managerial accountings, and business & economic statistics.</li>
           </ul>
         </div>
-      </span><hr class="res-hr">
+      </span>
 
   </div>
 </div>
