@@ -12,10 +12,14 @@
 
 ----
 
-
 == Pages:
 * Home
 * Resume
 * Portfolio
 * About
 
+
+----
+
+== Next:
+* Blog
